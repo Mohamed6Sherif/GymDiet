@@ -29,7 +29,7 @@ function PrintPage() {
         ref={printRef}
         className="bg-white p-6 max-w-3xl mx-auto shadow rounded text-right leading-loose"
       >
-        <h2 className="text-2xl font-bold mb-4">نظام غذائي للعميل</h2>
+        <h2 className="text-2xl font-bold mb-4">النظام الغذائي</h2>
         <p>
           <strong>الاسم:</strong> {data.name}
         </p>

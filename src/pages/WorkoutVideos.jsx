@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import VideoCard from "../components/VideoCard";
+import staticVideos from "../data/staticVideos";
 
 function WorkoutVideos() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("videos")) || [];
-    setVideos(stored);
+    setVideos([...staticVideos, ...stored]);
   }, []);
 
   return (
