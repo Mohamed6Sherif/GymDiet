@@ -4,7 +4,7 @@ import html2pdf from "html2pdf.js";
 
 function PrintPage() {
   const location = useLocation();
-  const navigate = useNavigate(); // ⬅️ نستخدمه للرجوع
+  const navigate = useNavigate();
   const data = location.state;
   const printRef = useRef();
 
